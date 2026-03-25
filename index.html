@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <audio autoplay loop muted id="song">
+  <audio id="music" loop>
     <source src="song1.mp3" type="audio/mpeg">
 </audio>
     <div id="wrapper">
@@ -48,7 +48,7 @@
                         <span style="--t: 6.4s;">y</span>
                     </h1>
                     <div class="hat">
-                        <img src="./images/hat.png" alt="" width="130">
+                        <img src="hat.png" alt="" width="130">
                     </div>
                 </div>
                 <div class="date__of__birth">
@@ -75,10 +75,10 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
                     <div class="balloon_one">
-                        <img width="100px" src="./images/balloon1.png" alt="">
+                        <img width="100px" src="balloon1.png" alt="">
                     </div>
                     <div class="balloon_two">
-                        <img width="100px" src="./images/balloon2.png" alt="">
+                        <img width="100px" src="balloon2.png" alt="">
                     </div>
                 </div>
                 <div class="cricle">
@@ -109,7 +109,22 @@
         <div class="decorate_star star4" style="--t: 15.6s;"></div>
         <div class="decorate_star star5" style="--t: 15.8s;"></div>
         <div class="decorate_flower--one" style="--t: 15s;">
+            <img width="20" src="decorate_flower.png" alt="">
         </div>
+        <div class="decorate_flower--two" style="--t: 15.3s;">
+            <img width="20" src="decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_flower--three" style="--t: 15.6s;">
+            <img width="20" src="decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_bottom">
+            <img src="decorate.png" alt="" width="100">
+        </div>
+        <div class="smiley__icon">
+            <img src="smiley_icon.png" alt="" width="100">
+        </div>
+
+
         <div class="boxMail">
             <i class="fa-solid fa-xmark"></i>
             <div class="boxMail-container">
@@ -117,7 +132,7 @@
                     <div class="userImg">
                         <img src="image1.jpg" alt="">
                     </div>
-                    <h4 class="username">To: Yellow 💖<span class="underline"></span></h4>
+                    <h4 class="username">To: Fedoua 💖<span class="underline"></span></h4>
 
                     <h3>Happy Birthday</h3>
                     <div class="imageCute">
@@ -127,9 +142,9 @@
                 <div class="card2">
                     <div class="card2-content">
                         <h3>To You!</h3>
-                        <h2>Happy birthday 🥳🎂🥳💖  
-                                          The world is lucky to have you, and I’m even luckier.  
-                                              I wish you all the happiness, love, and success you deserve 🎂✨
+                        <h2>Happy birthday Fed🥳🎂🥳💖  
+The world is lucky to have you, and I’m even luckier to have you in my life.  
+I wish you all the happiness, love, and success you deserve 🎂✨
                         </h2>
 
                         <div class="imageCute2">
@@ -140,11 +155,15 @@
             </div>
         </div>
     </div>
-
-
+<script>
+document.addEventListener("click", function () {
+    let music = document.getElementById("music");
+    music.play();
+});
+</script>
 </body>
 <script>
-    let datetxt = "26 March";
+    let datetxt = "26 march";
     let datatxtletter = "My love. You are a very special girl. I always silently thank you for coming into my life. Today, I wish you all the best, lots of health, and lots of joy. I always hope we will celebrate many more birthdays like this together. Happy birthday to you.💕";
     let titleLetter = "To you";
     let charArrDate = datetxt.split('');
